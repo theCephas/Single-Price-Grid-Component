@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+}
+main{
+    display: grid;
+    grid-template-areas: 'first first first first first first' 'second second second third third third';
+    place-content: center;
+    min-height: 100vh;
+}
+.card1{
+    grid-area: first;
+    padding: 20px 40px;
+    background-color: whitesmoke;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.card2{
+    grid-area: second;
+    padding: 30px;
+    background-color: hsl(179, 62%, 43%);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+}
+.card3{
+    grid-area: third;
+    padding: 30px;
+    background-color: hsl(179, 74%, 48%);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+}
+h3{
+    color: hsl(179, 62%, 43%);
+    font-weight: 600;
+    font-size: 20px;
+}
+h4{
+    color: hsl(71, 73%, 54%);
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+p{
+    color: hsl(218, 22%, 67%);
+    font-weight: 550;
+}
+h5{
+    color:hsl(204, 43%, 93%);
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+.payment{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.doll{
+    color:hsl(204, 43%, 93%);
+    font-size: 35px;
+    padding-right: 10px;
+    font-weight: 600;
+}
+.per{
+    font-size: 14px;
+    color:hsl(217, 33%, 75%);
+    padding-top: 12px;
+    font-weight: 570;
+}
+.full{
+    color:hsl(204, 43%, 93%);
+}
+button{
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+    width: 90%;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0px 1px 8px 0px rgb(134, 134, 134);
+}
+button:hover{
+    background-color: hsl(71, 96%, 50%);
+}
+.last-para{
+    color:hsl(180, 39%, 81%);
+    font-weight: 500;
+}
+.attribution { font-size: 11px; font-weight: 600; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media screen and (max-width: 500px){
+    main{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 15px 30px 15px;
+    }
+    .card1{
+        border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    line-height: 25px;
+    }
+    .card2{
+        border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    }
+    .card3{
+        border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    }
+}
